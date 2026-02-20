@@ -20,5 +20,4 @@ app.use('/api/notes', noteRouter);
 app.use('/api/user', userRouter)
 
 
-
 module.exports = app;
