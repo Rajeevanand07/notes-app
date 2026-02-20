@@ -9,7 +9,7 @@ const app = express();
 // Middleware   
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173','https://notes-app-x7wq.vercel.app/'],
+    origin: '*',
     credentials: true
 }));
 app.use(cookieParser())
