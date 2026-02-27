@@ -9,7 +9,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const addNote = (title, content) => {
-    fetch('http://localhost:3000/api/notes',{
+    fetch('https://notes-app-6z33.onrender.com/api/notes',{
       method: 'POST',
       credentials: 'include',
       headers:{
@@ -26,7 +26,7 @@ const Home = () => {
  
 
   const updateNote = (id, title, content) => {
-    fetch(`http://localhost:3000/api/notes/${id}`,{
+    fetch(`https://notes-app-6z33.onrender.com/api/notes/${id}`,{
       method: 'PUT',
       credentials:'include',
       headers:{

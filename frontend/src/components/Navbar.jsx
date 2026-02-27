@@ -9,7 +9,7 @@ const Navbar = () => {
   const logout = async () => {
     console.log("logout");
     try {
-      const res = await axios.post("http://localhost:3000/api/user/logout",{}, {
+      const res = await axios.post("https://notes-app-6z33.onrender.com/api/user/logout",{}, {
         withCredentials: true,
       });
       console.log(res);

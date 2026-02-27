@@ -12,7 +12,7 @@ const NotesContextProvider = ({ children }) => {
   useEffect(() => {
     const getAllNotes = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/notes", {
+        const res = await axios.get("https://notes-app-6z33.onrender.com/api/notes", {
           withCredentials: true,
         });
         setNotes(res.data || []);
@@ -28,7 +28,7 @@ const NotesContextProvider = ({ children }) => {
     const getCurrentUser = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:3000/api/user/currentUser",
+          "https://notes-app-6z33.onrender.com/api/user/currentUser",
           {
             withCredentials: true,
           },

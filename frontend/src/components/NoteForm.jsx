@@ -20,7 +20,7 @@ const NoteForm = ({ addNote, updateNote, editingNote }) => {
 
     if (editingNote) {
       await axios.put(
-        `http://localhost:3000/api/notes/${editingNote._id}`,
+        `https://notes-app-6z33.onrender.com/api/notes/${editingNote._id}`,
         {
           title,
           content,
@@ -32,7 +32,7 @@ const NoteForm = ({ addNote, updateNote, editingNote }) => {
       updateNote(editingNote._id, title, content);
     } else {
       await axios.post(
-        "http://localhost:3000/api/notes",
+        "https://notes-app-6z33.onrender.com/api/notes",
         { title, content },
         {
           withCredentials: true,
